@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACI,kBAAM;EACF,gBAAgB,EAAE,IAAI;;ACF9B,IAAK;EACD,gBAAgB,EAAE,KAAK;;ACG3B,IAAK;EACD,gBAAgB,EAAE,OAA+B;EACjD,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,MAAM",
-"sources": ["../../containers/searchbar/searchbar.scss","../../components/app/app.scss","../scss/index.scss"],
-"names": [],
-"file": "index.css"
-}

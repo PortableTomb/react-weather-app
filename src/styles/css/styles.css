@@ -1,13 +1,13 @@
-.input-group input {
+.inputGroup input {
   background-color: blue; }
 
 .app {
   background-color: green; }
 
 body {
-  background-color: #5ceae5;
+  background-color: #f8f7f6;
   margin: 0 auto;
   paddng: 0;
   text-align: center; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=styles.css.map */
