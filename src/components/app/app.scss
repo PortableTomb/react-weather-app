@@ -1,3 +1,10 @@
 .app {
     // background-color: green;
 }
+
+body {
+    background-color: lighten(rgb(190, 200, 200), 18%);
+    margin: 0 auto;
+    paddng: 0;
+    text-align: center;
+}

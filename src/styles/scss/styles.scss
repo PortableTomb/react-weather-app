@@ -1,11 +1,11 @@
 @import '../../containers/searchbar/searchbar';
 @import '../../components/app/app';
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
-body {
-    background-color: lighten(rgb(200, 198, 192), 20%);
-    margin: 0 auto;
-    paddng: 0;
-    text-align: center;
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px;
 }
 

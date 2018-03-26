@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACI,iBAAM;EACF,gBAAgB,EAAE,IAAI;;ACF9B,IAAK;EACD,gBAAgB,EAAE,KAAK;;ACG3B,IAAK;EACD,gBAAgB,EAAE,OAAgC;EAClD,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,MAAM",
-"sources": ["../../containers/searchbar/searchbar.scss","../../components/app/app.scss","../scss/styles.scss"],
+"mappings": "AAII,aAAM;EACF,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EAEvB,oBAAS;IACL,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,IAAI;IACb,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,IAAI;EAEhB,kBAAO;IACH,KAAK,ECbE,OAAO;IDcd,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,IAAI;IACb,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,gBAAgB,ECjBV,OAAO;;ACDzB,IAAK;EACD,gBAAgB,EAAE,OAAgC;EAClD,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,MAAM;;ACLtB,oBAAqB;EACjB,UAAU,EAAE,UAAU;;AAG1B,IAAK;EACD,SAAS,EAAE,KAAK",
+"sources": ["../../containers/searchbar/searchbar.scss","../scss/_variables.scss","../../components/app/app.scss","../scss/styles.scss"],
 "names": [],
 "file": "styles.css"
 }

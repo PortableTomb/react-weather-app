@@ -1,5 +1,32 @@
-.inputGroup {
-    input {
-        // background-color: blue;
+@import '../../styles/scss/_variables';
+
+.search {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    .wrap {
+        margin: 100px 10%;
+        width: 80%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+
+        &__input {
+            border: none;
+            outline: none;
+            width: 66%;
+            height: 40px;
+        }
+        &__btn {
+            border: none;
+            outline: none;
+            width: 33%;
+            height: 40px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: $font-color-light;
+            background-color: $font-color-dark;
+        }
     }
+    
 }
