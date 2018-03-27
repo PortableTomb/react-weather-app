@@ -5,6 +5,7 @@ export default function(state=[], action) {
         case FETCH_WEATHER:
             // return state.concat([ action.payload.data ]);
             return [ action.payload.data, ...state ]
+        default : return state;
     }
     return state;
 }

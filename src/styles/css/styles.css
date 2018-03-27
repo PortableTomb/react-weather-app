@@ -1,20 +1,28 @@
-.search .wrap {
-  margin: 100px 0;
-  height: 40px;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.search {
   display: flex;
-  justify-content: center; }
-  .search .wrap__input {
-    border: none;
-    outline: none;
-    width: 240px;
-    height: 40px; }
-  .search .wrap__btn {
-    color: #f1f1f1;
-    border: none;
-    outline: none;
-    width: 60px;
+  width: 100%;
+  margin: auto; }
+  .search .wrap {
+    margin: 100px 10%;
+    width: 80%;
     height: 40px;
-    background-color: #3b3b3b; }
+    display: flex;
+    justify-content: center; }
+    .search .wrap__input {
+      border: none;
+      outline: none;
+      width: 66%;
+      height: 40px; }
+    .search .wrap__btn {
+      border: none;
+      outline: none;
+      width: 33%;
+      height: 40px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      color: #f1f1f1;
+      background-color: #3b3b3b; }
 
 body {
   background-color: #f0f2f2;
@@ -26,6 +34,7 @@ body {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
