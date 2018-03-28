@@ -26,12 +26,13 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <form   onSubmit={this.onFormSubmit}
+            <form onSubmit={this.onFormSubmit}
                     className={styles.search}>
                 <div className={styles.wrap}>
-                    <input  value={ this.state.term }
+                    <input  type="text" 
+                            value={ this.state.term }
                             onChange={ this.onInputChange }
-                            placeholder="Enter US cities for a forecast"
+                            placeholder="Enter a US City to get started."
                             className={styles.wrap__input}/>
                     <button type="submit" className={styles.wrap__btn}>search</button>
                 </div>     

@@ -1,12 +1,17 @@
+@import '../../styles/scss/_variables';
+
 .table {
     width: 100%;
-    padding: 2.5rem 6rem;
+    // padding: 2.5rem 6rem;
     border-spacing: 0;
 
     &__head {
         padding: 2rem;
-        background-color: #eaeaea;
-        color: #1a1a1a;
+        background-color: $default-bg;
+        color: $font-color-dark;
+        @media only screen and (max-width: 800px){
+            display: none;
+        }
     }
 
     &__rowhead {
@@ -20,9 +25,12 @@
     &__data {
         &_name {
             font-size: 1.25rem;
-            font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 1px;
+            @media only screen and (max-width: 800px){
+                font-size: 2rem;
+                background-color: #eaeaea;
+            }
         }
         &__error {
             font-size: 2.5rem;
@@ -45,3 +53,62 @@
     }
 }
 
+
+@media only screen and (max-width: 800px){
+// only screen and (max-width: 760px),
+// (min-device-width: 768px) and (max-device-width: 1024px)
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { 
+    @include border;
+    }
+  
+  td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  td:before { 
+    padding-top: .5rem;
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /* Label the data */
+  td:nth-of-type(2):before { content: "5 Day Average Temperature"; }
+  td:nth-of-type(3):before { content: "5 Day Average Humidity"; }
+  td:nth-of-type(4):before { content: "5 Day Average Pressure"; }
+}
+
+.start {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @media only screen and (max-width: 800px){
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}

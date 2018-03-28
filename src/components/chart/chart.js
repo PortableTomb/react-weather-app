@@ -8,9 +8,6 @@ export default (props) => {
 function average(data) {
     return _.round(_.sum(data)/data.length);
 }
-
-
-
     return (
         <div>
             <Sparklines className={styles.svg} height="120" width="180" data={props.data}>

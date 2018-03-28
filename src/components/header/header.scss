@@ -1,0 +1,27 @@
+@import '../../styles/scss/_variables';
+
+.header {
+    top:0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    background: $font-color-dark;
+    z-index: 2;
+    @include boxshadow-02;
+    width: 100%;
+    height: 5rem;
+    &__logo {
+        &_box {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: 0 2.5rem;
+            color: $font-color-light;
+        }
+    }
+    &__about {
+        text-transform: uppercase;
+        padding: 0 2.5rem;
+        margin-left: auto;
+        color: $font-color-light;
+    }
+}

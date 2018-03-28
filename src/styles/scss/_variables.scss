@@ -5,9 +5,43 @@ $black: #000000;
 $font-color-light: #f1f1f1;
 $font-color-dark: #3b3b3b;
 
+// default background
+$default-bg: #eaeaea;
+$default-border: #cccccc;
+
+// default colors
+$default-form-bg: #41c3f9;
+$gradient-color-01:#00b7ff;
+$gradient-color-02:#f9d341;
+$gradient-color-03:#c3f941;
+
+// searchbar colors
+$search-color-light: rgba(255,255,255,0.75);
+$search-color-dark: rgba(59,59,59,0.85);
+
+
 // breakpoints
 $lrg-dsktp: 75em;
 $dsktp: 68.75em;
 $tablet: 56.25em;
 $mobile: 37.5em;
 $phone: 31.25em;
+
+// mixins
+@mixin boxshadow-01 {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+@mixin boxshadow-02 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin border($size:1px, $color:$default-border){
+    border: $size solid $color;
+}
+
+@mixin mq($bp) {
+    @media only screen and (max-width: $bp) {
+        @content;
+    }
+}
